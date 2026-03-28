@@ -29,9 +29,17 @@ export default function Projects() {
         marginTop: '2rem'
       }}>
         {projects.map((project, i) => (
-          <div key={i} className="glass-card" style={{ display: 'flex', flexDirection: 'column', gap: '1rem', position: 'relative' }}>
+          <div key={i} className="glass-card" style={{ display: 'flex', flexDirection: 'column', gap: '1rem', position: 'relative', overflow: 'hidden' }}>
+            <div style={{ display: 'flex', justifyContent: 'center', background: 'rgba(255, 255, 255, 0.03)', borderRadius: '8px', padding: '1rem', marginBottom: '0.5rem' }}>
+              <img 
+                src="/spineband-logo.png" 
+                alt="SpineBand Logo" 
+                style={{ height: '80px', objectFit: 'contain', filter: 'drop-shadow(0px 4px 10px rgba(0,0,0,0.3))' }} 
+              />
+            </div>
+            
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.5rem' }}>
-              <Cpu size={32} style={{ color: 'rgba(255,255,255,0.8)' }} />
+              <div style={{ flex: 1 }}></div>
               <div style={{ display: 'flex', gap: '0.8rem' }}>
                 <a href={project.github} target="_blank" rel="noreferrer" style={{ color: 'var(--text-muted)' }} title="Ver Código en GitHub">
                   <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.02c3.1-.34 6.33-1.53 6.33-6.98 0-1.5-.5-2.7-1.3-3.6.1-.3.6-1.7-.1-3.5 0 0-1-.3-3.3 1.2a11.5 11.5 0 0 0-6 0C7.3 1.5 6.3 1.8 6.3 1.8c-.7 1.8-.2 3.2-.1 3.5-.8.9-1.3 2.1-1.3 3.6 0 5.4 3.2 6.6 6.3 7A4.8 4.8 0 0 0 8 18v4"></path></svg>

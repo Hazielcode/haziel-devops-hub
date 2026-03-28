@@ -15,6 +15,13 @@ export default function Projects() {
       tech: ['Django REST', 'React', 'Kotlin', 'Python', 'MySQL', 'Spring Boot'],
       github: 'https://github.com/Tecsupsoft/2025-2-4c24-pi-pi_5a.git',
       image: '/tecminer-logo.png'
+    },
+    {
+      title: 'HospitalSystem',
+      description: 'Sistema de gestión hospitalaria moderno y escalable. Administra pacientes, médicos, citas y especialidades. Desarrollado con arquitectura MVC, integra base de datos NoSQL y vistas dinámicas para optimizar el flujo de trabajo médico diario.',
+      tech: ['Java 17', 'Spring Boot', 'MongoDB', 'Thymeleaf', 'Bootstrap 5', 'Gradle'],
+      github: 'https://github.com/Hazielcode/NOMERCY-SYSTEM',
+      image: 'https://i.imgur.com/8M9r1nV.png'
     }
   ];
 

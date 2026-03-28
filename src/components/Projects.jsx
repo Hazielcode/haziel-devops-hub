@@ -6,7 +6,15 @@ export default function Projects() {
       title: 'SpineBand (IoT & Mobile)',
       description: 'Sistema avanzado de monitorización postural. Construido en Kotlin con integración de hardware embebido ESP32. Utiliza sensores giroscópicos MPU6050 para procesar y transmitir telemetría en tiempo real.',
       tech: ['Kotlin', 'ESP32', 'MPU6050', 'C++', 'IoT'],
-      github: 'https://github.com/Hazielcode/SpineBand'
+      github: 'https://github.com/Hazielcode/SpineBand',
+      image: '/spineband-logo.png'
+    },
+    {
+      title: 'TecMiner - Gestión Minera Integral',
+      description: 'Plataforma ERP Minera de arquitectura distribuida con App Móvil nativa. Gestor completo de zonas de extracción, producción, mantenimiento y análisis, con 60+ endpoints y 9 módulos backend.',
+      tech: ['Django REST', 'React', 'Kotlin', 'Python', 'MySQL', 'Spring Boot'],
+      github: 'https://github.com/Tecsupsoft/2025-2-4c24-pi-pi_5a.git',
+      image: '/tecminer-logo.png'
     }
   ];
 
@@ -50,8 +58,8 @@ export default function Projects() {
               border: '1px solid rgba(255, 255, 255, 0.03)'
             }}>
               <img 
-                src="/spineband-logo.png" 
-                alt="SpineBand Logo" 
+                src={project.image} 
+                alt={`${project.title} Logo`} 
                 style={{ 
                   width: '100%', 
                   height: 'auto', 

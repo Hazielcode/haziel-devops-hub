@@ -2,7 +2,8 @@ import React from 'react';
 import NodeBackground from './components/NodeBackground';
 import Hero from './components/Hero';
 import Skills from './components/Skills';
-import Contact from './components/Contact'; // Lo crearemos a continuación
+import Projects from './components/Projects';
+import Contact from './components/Contact';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <main className="content-wrapper">
         <Hero />
         <Skills />
+        <Projects />
         <Contact />
       </main>
     </div>

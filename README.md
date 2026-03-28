@@ -75,8 +75,8 @@ npm run dev
 ¿Buscando optimizar despliegues, automatizar tareas repetitivas o diseñar arquitecturas tolerantes a fallos nativas de la nube? Vamos a platicarlo.
 
 - **GitHub:** [@Hazielcode](https://github.com/Hazielcode)
-- **LinkedIn:** [Conecta conmigo aquí](#)
-- **Instagram:** [Sígueme aquí](#)
+- **LinkedIn:** [samir-alfonso](https://www.linkedin.com/in/samir-alfonso/)
+- **Instagram:** [@hazziel_cold](https://www.instagram.com/hazziel_cold/?hl=es)
 
 <br />
 

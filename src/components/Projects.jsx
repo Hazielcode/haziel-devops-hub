@@ -21,12 +21,12 @@ export default function Projects() {
       description: 'Sistema de gestión hospitalaria moderno y escalable. Administra pacientes, médicos, citas y especialidades. Desarrollado con arquitectura MVC, integra base de datos NoSQL y vistas dinámicas para optimizar el flujo de trabajo médico diario.',
       tech: ['Java 17', 'Spring Boot', 'MongoDB', 'Thymeleaf', 'Bootstrap 5', 'Gradle'],
       github: 'https://github.com/Hazielcode/NOMERCY-SYSTEM',
-      image: 'https://i.imgur.com/8M9r1nV.png'
+      image: '/nomercy-system.png'
     }
   ];
 
   return (
-    <motion.section 
+    <motion.section
       id="projects"
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
@@ -35,7 +35,7 @@ export default function Projects() {
       style={{ marginBottom: '6rem' }}
     >
       <h3 className="section-title">Proyectos Personales</h3>
-      
+
       <div style={{
         display: 'grid',
         gridTemplateColumns: '1fr', // Tarjeta ancha que ocupa todo el grid horizontal
@@ -43,40 +43,40 @@ export default function Projects() {
         marginTop: '2rem'
       }}>
         {projects.map((project, i) => (
-          <div key={i} className="glass-card" style={{ 
-            display: 'flex', 
-            flexWrap: 'wrap', 
-            gap: '2.5rem', 
-            alignItems: 'center', 
-            position: 'relative', 
+          <div key={i} className="glass-card" style={{
+            display: 'flex',
+            flexWrap: 'wrap',
+            gap: '2.5rem',
+            alignItems: 'center',
+            position: 'relative',
             overflow: 'hidden',
             padding: '2rem'
           }}>
             {/* IZQUIERDA: Imagen del Logo (Tamaño Mediano y Centrado) */}
-            <div style={{ 
-              flex: '1 1 200px', 
+            <div style={{
+              flex: '1 1 200px',
               maxWidth: '350px',
-              display: 'flex', 
-              justifyContent: 'center', 
+              display: 'flex',
+              justifyContent: 'center',
               alignItems: 'center',
-              background: 'rgba(255, 255, 255, 0.02)', 
-              borderRadius: '12px', 
+              background: 'rgba(255, 255, 255, 0.02)',
+              borderRadius: '12px',
               padding: '2rem',
               border: '1px solid rgba(255, 255, 255, 0.03)'
             }}>
-              <img 
-                src={project.image} 
-                alt={`${project.title} Logo`} 
-                style={{ 
-                  width: '100%', 
-                  height: 'auto', 
+              <img
+                src={project.image}
+                alt={`${project.title} Logo`}
+                style={{
+                  width: '100%',
+                  height: 'auto',
                   maxHeight: '180px', // Lo hacemos más grande "mediano"
-                  objectFit: 'contain', 
-                  filter: 'drop-shadow(0px 8px 16px rgba(0,0,0,0.5))' 
-                }} 
+                  objectFit: 'contain',
+                  filter: 'drop-shadow(0px 8px 16px rgba(0,0,0,0.5))'
+                }}
               />
             </div>
-            
+
             {/* DERECHA: Información del Proyecto */}
             <div style={{ flex: '2 1 300px', display: 'flex', flexDirection: 'column' }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.2rem' }}>
@@ -87,17 +87,17 @@ export default function Projects() {
                   </svg>
                 </a>
               </div>
-              
+
               <p style={{ fontSize: '1.05rem', color: 'var(--text-muted)', lineHeight: 1.7, marginBottom: '1.8rem' }}>
                 {project.description}
               </p>
-              
+
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.8rem' }}>
                 {project.tech.map((t, index) => (
-                  <span key={index} style={{ 
-                    fontSize: '0.9rem', 
-                    padding: '0.4rem 1rem', 
-                    background: 'rgba(255,255,255,0.04)', 
+                  <span key={index} style={{
+                    fontSize: '0.9rem',
+                    padding: '0.4rem 1rem',
+                    background: 'rgba(255,255,255,0.04)',
                     borderRadius: '8px',
                     color: 'rgba(255,255,255,0.95)',
                     border: '1px solid rgba(255,255,255,0.12)'

@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
+import { ArrowLeft } from 'lucide-react';
 
-export default function Projects() {
+export default function Projects({ onBack }) {
   const projects = [
     {
       title: 'SpineBand (IoT & Mobile)',
@@ -34,6 +35,27 @@ export default function Projects() {
       transition={{ duration: 0.8 }}
       style={{ marginBottom: '6rem' }}
     >
+      <button 
+        onClick={onBack}
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+          gap: '0.6rem',
+          background: 'none',
+          border: 'none',
+          color: 'var(--text-muted)',
+          cursor: 'pointer',
+          padding: '0',
+          marginBottom: '2rem',
+          fontSize: '1rem',
+          transition: 'color 0.3s ease'
+        }}
+        onMouseEnter={(e) => e.target.style.color = '#fff'}
+        onMouseLeave={(e) => e.target.style.color = 'var(--text-muted)'}
+      >
+        <ArrowLeft size={20} /> Volver al Inicio
+      </button>
+
       <h3 className="section-title">Proyectos Personales</h3>
 
       <div style={{

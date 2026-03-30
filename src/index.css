@@ -108,3 +108,54 @@ a {
   border-color: rgba(255, 255, 255, 0.15);
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
 }
+
+/* --- Certifications Hub Specifics --- */
+.filter-btn:hover {
+  border-color: rgba(255, 255, 255, 0.3) !important;
+  transform: translateY(-2px);
+}
+
+.filter-btn.active {
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+}
+
+.cert-card {
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+}
+
+.cert-card:hover {
+  transform: translateY(-8px) scale(1.02);
+}
+
+.verify-link:hover {
+  background: rgba(0, 240, 255, 0.12) !important;
+  border-color: rgba(0, 240, 255, 0.4) !important;
+  color: #fff !important;
+  transform: translateY(-2px);
+}
+
+.view-btn {
+  transition: all 0.3s ease !important;
+}
+
+.view-btn:hover {
+  background: rgba(255, 255, 255, 0.1) !important;
+  border-color: rgba(255, 255, 255, 0.3) !important;
+  transform: translateY(-2px);
+}
+
+.cert-card:hover {
+  transform: translateY(-8px) scale(1.01);
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.5rem;
+  }
+  
+  .filter-container {
+    justify-content: center;
+    gap: 0.5rem !important;
+  }
+}

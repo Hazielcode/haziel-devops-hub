@@ -1,5 +1,5 @@
 # Stage 1: Build the React app
-FROM node:22.14.0-alpine3.21 AS build
+FROM node:25.2.1-alpine3.21 AS build
 WORKDIR /app
 
 # Copy package files and install dependencies

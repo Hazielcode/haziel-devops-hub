@@ -57,7 +57,7 @@ export default function Hero({ onViewChange }) {
       <motion.h2 variants={itemVars} style={{ fontSize: '2.5rem', color: 'var(--text-muted)', fontWeight: 400, marginBottom: '2rem' }}>
         Cloud & DevOps Engineer.
       </motion.h2>
-      
+       
       <motion.div variants={itemVars} style={{ maxWidth: '600px', fontSize: '1.1rem', color: 'var(--text-main)', lineHeight: 1.6 }}>
         <p style={{ marginBottom: '1.5rem' }}>
           Especializado en la orquestación de contenedores y automatización mediante Infraestructura como Código (IaC). 

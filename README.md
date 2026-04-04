@@ -51,35 +51,46 @@ Mi enfoque profesional abarca el ciclo de vida completo de DevOps:
 
 ## 🚀 Despliegue Local
 
-¡Si deseas compilar esta arquitectura en tu entorno local, sigue estos pasos!
-
+### Opción A: Usando NPM (Tradicional)
 ```bash
-# 1. Clona el repositorio
-git clone https://github.com/Hazielcode/haziel-devops-hub.git
-
-# 2. Entra al directorio
-cd haziel-devops-hub
-
-# 3. Instala las dependencias
+# 1. Instala las dependencias
 npm install
 
-# 4. Inicia el servidor de desarrollo relámpago
+# 2. Inicia el servidor de desarrollo
 npm run dev
 ```
 
-*(Luego, abre simplemente `http://localhost:5173/` en tu navegador favorito)*.
+### Opción B: Usando Docker (Recomendado si NPM falla) 🐋
+Contenedor optimizado para desarrollo con Hot Reload:
+
+```bash
+# 1. Iniciar en modo desarrollo (reemplaza npm run dev)
+docker-compose up dev
+
+# 2. (Opcional) Construir y correr versión de producción
+docker-compose up app
+```
+
+*(Luego, abre `http://localhost:5173/` para la versión de desarrollo o `http://localhost:8080/` para la producción)*.
 
 ---
 
-## 📫 Conversemos
-¿Buscando optimizar despliegues, automatizar tareas repetitivas o diseñar arquitecturas tolerantes a fallos nativas de la nube? Vamos a platicarlo.
+## 🤖 Mantenimiento & Automatización (DevOps)
 
-- **GitHub:** [@Hazielcode](https://github.com/Hazielcode)
-- **LinkedIn:** [samir-alfonso](https://www.linkedin.com/in/samir-alfonso/)
-- **Instagram:** [@hazziel_cold](https://www.instagram.com/hazziel_cold/?hl=es)
+Este proyecto está configurado para ser **autónomo** y **escalable**:
 
-<br />
+### 📦 CI/CD (GitHub Actions)
+Cada vez que subas cambios a la rama `main`, GitHub:
+1. Verifica que el proyecto compile correctamente.
+2. Construye una nueva imagen de Docker.
+3. La sube automáticamente a tu **Docker Hub**.
 
-<div align="center">
-  <sub>Construido con 🖤 y precisión algorítmica.</sub>
-</div>
+### 🛠️ Dependabot
+GitHub revisará semanalmente si hay actualizaciones de seguridad o de librerías (Vite, React, Framer Motion) y creará una *Pull Request* para que las aceptes con un solo clic.
+
+### 🔑 Configuración de Secretos
+Para que el robot pueda subir imágenes a tu Docker Hub, añade estos dos secretos en `Settings > Secrets and variables > Actions`:
+*   `DOCKER_USERNAME`: Tu usuario de Docker Hub.
+*   `DOCKER_PASSWORD`: Tu Access Token de Docker Hub.
+
+---
